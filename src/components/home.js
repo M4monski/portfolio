@@ -5,7 +5,7 @@ import { MdOutlineMail } from 'react-icons/md';
 export default function HomePage() {
   return (
     <div className="bg-[#4B2A12] w-full h-full">
-      <main className="bg-[url('/images/HERO-BG.svg')] w-full h-screen">
+      <main className="bg-[url('/images/HERO-BG.svg')] w-full h-screen bg-cover bg-no-repeat bg-center">
         <div className="flex flex-col items-center justify-center w-full h-full">
           <div className="flex flex-col items-center justify-center">
             <div className="flex items-center justify-center font-extrabold text-[5.125rem] drop-shadow-black drop-shadow-md">
