@@ -1,29 +1,298 @@
+import Image from 'next/image';
+
 export default function TechnologyPage() {
   return (
-    <div className="bg-gray-500">
+    <div className=" bg-gradient-to-br from-purple-900 via-slate-900 to-purple-900">
       {' '}
       {/* bg-gradient-to-br from-purple-900 via-slate-900 to-purple-900 */}
-      <main className="w-full h-screen flex justify-center">
-        <div className="flex flex-col items-center w-full h-screen max-h-9/10 max-w-4/5 bg-white/25 rounded-4xl border-white border-2 my-auto">
+      <main className="w-full h-full flex justify-center py-8">
+        <div className="flex flex-col items-center w-full h-full max-w-4/5 bg-white/25 rounded-4xl border-white border-2 my-auto">
           <div className="flex justify-center ">
             <h1 className="text-white font-bold text-[36px] p-4">
               Technology Stack
             </h1>
           </div>
-          <div className="flex gap-16 text-[25px]">
-            <button className="HoverButton px-4 py-2 rounded-2xl">All</button>
-            <button className="HoverButton px-4 py-2 rounded-2xl">
-              Design
-            </button>
-            <button className="HoverButton px-4 py-2 rounded-2xl">
-              Core Technology
-            </button>
-            <button className="HoverButton px-4 py-2 rounded-2xl">
-              Environment
-            </button>
-            <button className="HoverButton px-4 py-2 rounded-2xl">
-              Communcation
-            </button>
+          <div className="flex gap-16 text-[15px] justify-evenly">
+            <button className="HoverButton !px-8">All</button>
+            <button className="HoverButton">Design</button>
+            <button className="HoverButton">Core Technology</button>
+            <button className="HoverButton">Environment</button>
+            <button className="HoverButton">Communcation</button>
+          </div>
+          <div className="mt-8 mb-16 grid grid-cols-5 justify-around w-full h-full max-w-9/10 justify-items-center items-center">
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Glossary/TypeScript"
+              target="_blank"
+              className="technologyLabels"
+            >
+              <Image
+                src="/logos/Typescript.svg"
+                width={75}
+                height={75}
+                alt="TypeScript"
+              />
+              TypeScript
+            </a>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+              target="_blank"
+              className="technologyLabels"
+            >
+              <Image
+                src="/logos/JavaScript.svg"
+                width={75}
+                height={75}
+                alt="JavaScript"
+              />
+              JavaScript
+            </a>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5"
+              target="_blank"
+              className="technologyLabels"
+            >
+              <Image
+                src="/logos/HTML5.svg"
+                width={75}
+                height={75}
+                alt="HTML5"
+              />
+              HTML5
+            </a>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+              target="_blank"
+              className="technologyLabels"
+            >
+              <Image src="/logos/CSS.svg" width={75} height={75} alt="CSS" />
+              CSS
+            </a>
+            <a
+              href="https://dotnet.microsoft.com/en-us/"
+              target="_blank"
+              className="technologyLabels"
+            >
+              <Image
+                src="/logos/dotNET.svg"
+                width={75}
+                height={75}
+                alt="DOTNET"
+              />
+              .NET
+            </a>
+            <a
+              href="https://learn.microsoft.com/en-us/dotnet/csharp/"
+              target="_blank"
+              className="technologyLabels"
+            >
+              <Image
+                src="/logos/CSharp.svg"
+                width={75}
+                height={75}
+                alt="CSharpLogo"
+              />
+              C#
+            </a>
+            <a
+              href="https://www.python.org/"
+              target="_blank"
+              className="technologyLabels"
+            >
+              <Image
+                src="/logos/Python.svg"
+                width={75}
+                height={75}
+                alt="Python"
+              />
+              Python
+            </a>
+            <a
+              href="https://nodejs.org/en"
+              target="_blank"
+              className="technologyLabels"
+            >
+              <Image
+                src="/logos/Nodejs.svg"
+                width={75}
+                height={75}
+                alt="Nodejs"
+              />
+              Nodejs
+            </a>
+            <a
+              href="https://react.dev/"
+              target="_blank"
+              className="technologyLabels"
+            >
+              <Image
+                src="/logos/React.svg"
+                width={75}
+                height={75}
+                alt="Reactjs"
+              />
+              Reactjs
+            </a>
+            <a
+              href="https://nextjs.org/"
+              target="_blank"
+              className="technologyLabels"
+            >
+              <Image
+                src="/logos/nextjs.svg"
+                width={75}
+                height={75}
+                alt="Nextjs"
+              />
+              Nextjs
+            </a>
+
+            <a
+              href="https://tailwindcss.com/"
+              target="_blank"
+              className="technologyLabels"
+            >
+              <Image
+                src="/logos/TailwindCSS.svg"
+                width={75}
+                height={75}
+                alt="TailwindCSS"
+              />
+              TailwindCSS
+            </a>
+            <a
+              href="https://firebase.google.com/"
+              target="_blank"
+              className="technologyLabels"
+            >
+              <Image
+                src="/logos/Firebase.svg"
+                width={75}
+                height={75}
+                alt="Firebase"
+              />
+              Firebase
+            </a>
+            <a
+              href="https://www.mysql.com/"
+              target="_blank"
+              className="technologyLabels"
+            >
+              <Image src="/logos/SQL.svg" width={75} height={75} alt="SQL" />
+              SQL
+            </a>
+            <a
+              href="https://www.microsoft.com/en-us/microsoft-365/access"
+              target="_blank"
+              className="technologyLabels"
+            >
+              <Image
+                src="/logos/MSAcess.svg"
+                width={75}
+                height={75}
+                alt="MSAccess"
+              />
+              Microsoft Access
+            </a>
+            <a
+              href="https://git-scm.com/"
+              target="_blank"
+              className="technologyLabels"
+            >
+              <Image src="/logos/Git.svg" width={75} height={75} alt="Git" />
+              Git
+            </a>
+            <a
+              href="https://github.com/"
+              target="_blank"
+              className="technologyLabels"
+            >
+              <Image
+                src="/logos/Github.svg"
+                width={75}
+                height={75}
+                alt="Github"
+              />
+              Github
+            </a>
+
+            <a
+              href="https://visualstudio.microsoft.com/"
+              target="_blank"
+              className="technologyLabels"
+            >
+              <Image
+                src="/logos/VS2022.svg"
+                width={75}
+                height={75}
+                alt="VS2022"
+              />
+              Visual Studio 2022
+            </a>
+            <a
+              href="https://code.visualstudio.com/"
+              target="_blank"
+              className="technologyLabels"
+            >
+              <Image
+                src="/logos/VSCode.svg"
+                width={75}
+                height={75}
+                alt="VSCode"
+              />
+              Visual Studio Code
+            </a>
+            <a
+              href="https://gemini.google.com/app"
+              target="_blank"
+              className="technologyLabels"
+            >
+              <Image
+                src="/logos/Gemini.svg"
+                width={75}
+                height={75}
+                alt="Gemini"
+              />
+              Gemini
+            </a>
+            <a
+              href="https://chat.openai.com/"
+              target="_blank"
+              className="technologyLabels"
+            >
+              <Image
+                src="/logos/ChatGPT.svg"
+                width={75}
+                height={75}
+                alt="ChatGPT"
+              />
+              ChatGPT
+            </a>
+            <a
+              href="https://discord.com/"
+              target="_blank"
+              className="technologyLabels"
+            >
+              <Image
+                src="/logos/Discord.svg"
+                width={75}
+                height={75}
+                alt="Discord"
+              />
+              Discord
+            </a>
+            <a
+              href="https://teams.microsoft.com/v2/"
+              target="_blank"
+              className="technologyLabels"
+            >
+              <Image
+                src="/logos/MSTeams.svg"
+                width={75}
+                height={75}
+                alt="MSTeams"
+              />
+              Microsoft Teams
+            </a>
           </div>
         </div>
       </main>
