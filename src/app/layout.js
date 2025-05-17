@@ -1,10 +1,16 @@
-import { Geist, Geist_Mono, Inter } from 'next/font/google'; // Consolidated imports, Poppins removed
+// src/app/layout.js
+// Keep your existing imports: Geist, Inter, NavBar, Footer, globals.css
+import { Geist, Geist_Mono, Inter } from 'next/font/google';
+import NavBar from '@/components/navBar'; // Assuming this path is correct
+import Footer from '@/components/footer'; // Assuming this path is correct
 import './globals.css';
+import { ActiveSectionProvider } from './ActiveSectionContext'; // Adjust path if needed
 
+// Keep your font initializations (inter, geistSans, geistMono)
 const inter = Inter({
   subsets: ['latin'],
-  variable: '--font-inter', // This is crucial for Tailwind integration if Inter is your base sans font
-  weight: ['300', '400', '500', '600', '700'], // Added common weights for Inter
+  variable: '--font-inter',
+  weight: ['300', '400', '500', '600', '700'],
 });
 
 const geistSans = Geist({
@@ -28,10 +34,19 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${inter.variable} ${geistSans.variable} ${geistMono.variable}`}
     >
-      <head>
-        <link rel="stylesheet" href="https://use.typekit.net/qbe1xrn.css" />
-      </head>
-      <body className="antialiased">{children}</body>
+      {/* <head> content should be automatically handled by Next.js unless specific tags are needed here */}
+      {/* <link rel="stylesheet" href="https://use.typekit.net/qbe1xrn.css" /> -> this can go into metadata or a <Head> component if needed */}
+      <body>
+        <ActiveSectionProvider>
+          {' '}
+          {/* <--- WRAPPER START */}
+          <NavBar /> {/* NavBar can now consume the context */}
+          <main className="antialiased relative">{children}</main>{' '}
+          {/* page.js content will be here */}
+          <Footer />
+        </ActiveSectionProvider>{' '}
+        {/* <--- WRAPPER END */}
+      </body>
     </html>
   );
 }

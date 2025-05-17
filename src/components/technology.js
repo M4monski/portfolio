@@ -5,7 +5,10 @@ export default function TechnologyPage() {
     <div className="containerBackground">
       {' '}
       {/* bg-gradient-to-br from-purple-900 via-slate-900 to-purple-900 */}
-      <main className="w-full h-full flex justify-center py-8">
+      <main
+        id="technologyPage"
+        className="w-full h-full flex justify-center py-8"
+      >
         <div className="flex flex-col items-center w-full h-full max-w-4/5 bg-white/25 rounded-4xl border-white border-2 my-auto">
           <div className="flex justify-center ">
             <h1 className="text-white font-bold text-[36px] p-4 ">
