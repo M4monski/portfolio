@@ -1,10 +1,10 @@
-import { Geist, Geist_Mono } from 'next/font/google';
-import { Inter } from 'next/font/google';
+import { Geist, Geist_Mono, Inter } from 'next/font/google'; // Consolidated imports, Poppins removed
 import './globals.css';
 
 const inter = Inter({
   subsets: ['latin'],
-  variable: '--font-inter', // This is crucial for Tailwind integration
+  variable: '--font-inter', // This is crucial for Tailwind integration if Inter is your base sans font
+  weight: ['300', '400', '500', '600', '700'], // Added common weights for Inter
 });
 
 const geistSans = Geist({
@@ -24,8 +24,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${inter.variable}antialiased`}>{children}</body>
+    <html
+      lang="en"
+      className={`${inter.variable} ${geistSans.variable} ${geistMono.variable}`}
+    >
+      <head>
+        <link rel="stylesheet" href="https://use.typekit.net/qbe1xrn.css" />
+      </head>
+      <body className="antialiased">{children}</body>
     </html>
   );
 }

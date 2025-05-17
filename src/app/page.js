@@ -1,11 +1,19 @@
 import BioPage from '@/components/bio';
 import TechnologyPage from '@/components/technology';
 import ExperiencePage from '@/components/experience';
+import HomePage from '@/components/home';
+import NavBar from '@/components/navBar';
+import Footer from '@/components/footer';
 
 export default function Home() {
   return (
     <div className="w-full h-full scroll-smooth ">
-      <header></header>
+      {/* NAVBAR */}
+      <NavBar />
+
+      {/* HOME PAGE */}
+      <HomePage />
+
       {/* BIO PART */}
       <BioPage />
 
@@ -14,7 +22,9 @@ export default function Home() {
 
       {/* EXPERIENCE */}
       <ExperiencePage />
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center"></footer>
+
+      {/* FOOTER */}
+      <Footer />
     </div>
   );
 }
