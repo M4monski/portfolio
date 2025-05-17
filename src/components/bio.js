@@ -4,7 +4,7 @@ import { IoDocumentTextOutline } from 'react-icons/io5';
 
 export default function BioPage() {
   return (
-    <div className="bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+    <div className="containerBackground">
       <main className="flex md:flex-row flex-col w-full md:max-w-4/5 mx-auto py-4 h-screen items-center justify-center text-white">
         {/* LEFT AREA */}
         <div className="w-3/5 md:order-1 order-2 border-2 bg-white/20 rounded-4xl p-8">
