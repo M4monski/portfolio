@@ -52,10 +52,10 @@ export default function BioPage() {
         <div className="w-2/5 md:order-2 order-1">
           <div className="flex items-center justify-center">
             <Image
-              className="rounded-full border-2 border-blue-50 drop-shadow-2xl"
-              src="/images/formalPicture.jpg"
-              width={300}
-              height={300}
+              className="border-blue-50 drop-shadow-2xl"
+              src="/images/formalPicture.svg"
+              width={700}
+              height={700}
               alt="Character Picture"
             ></Image>
           </div>

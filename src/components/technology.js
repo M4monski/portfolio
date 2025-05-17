@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function TechnologyPage() {
   return (
-    <div className="containerBackground2">
+    <div className="containerBackground">
       {' '}
       {/* bg-gradient-to-br from-purple-900 via-slate-900 to-purple-900 */}
       <main className="w-full h-full flex justify-center py-8">

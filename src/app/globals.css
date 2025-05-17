@@ -61,9 +61,11 @@ body {
 }
 
 .containerBackground {
-  background-image: linear-gradient(to bottom right, #581c87, #0f172a, #581c87);
-}
-
-.containerBackground2 {
-  background-image: linear-gradient(to bottom right, #0f172a, #581c87, #0f172a);
+  background-image: linear-gradient(
+    to bottom,
+    #1e150c 0%,
+    #473525 31%,
+    #493321 59%,
+    #6e5033 83%
+  );
 }
