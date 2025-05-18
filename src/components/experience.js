@@ -196,7 +196,7 @@ const projectsData = [
       },
       {
         src: '/projects/QS-ManageProduct.png',
-        alt: 'QuickShop - Manage PRoduct',
+        alt: 'QuickShop - Manage Products',
       },
       {
         src: '/projects/QS-SalesReport.png',
