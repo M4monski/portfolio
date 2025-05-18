@@ -31,15 +31,19 @@ body {
   padding-inline: 1rem;
   padding-block: 0.5rem;
   border-radius: 1rem;
-  border: solid white 2px;
+  transform: scale(1);
+  transition: all 300ms ease-in-out;
+  /* color: #ffd8b5; */
+  /* border: solid white 2px; */
 }
 
 .HoverButton:hover {
-  background-color: white;
+  background-color: #ffb120;
   cursor: pointer;
   border-radius: 1rem;
-  color: gray;
+  color: white;
   transition-duration: 400ms;
+  transform: scale(1.1);
 }
 
 /* --- NAVBUTTON STYLES --- */

@@ -8,7 +8,7 @@ export default function BioPage() {
       <div className="flex items-center justify-center absolute w-full text-[#FFB120] text-[2.5rem] font-extrabold top-5 z-10">
         <h1>ABOUT ME</h1>
       </div>
-      <div className="absolute flex items-center justify-center w-full text-[#443323] opacity-50 font-extrabold text-[8rem] -top-4">
+      <div className="absolute flex items-center justify-center w-full text-[#443323] opacity-50 font-extrabold text-[5rem] top-1">
         <h1>ABOUT ME</h1>
       </div>
       <div className="w-full flex items-center justify-center absolute">
@@ -47,7 +47,7 @@ export default function BioPage() {
               <a
                 href="/resume/resume.pdf"
                 download="resume.pdf"
-                className="group flex items-center gap-1 border-white border-2 rounded-3xl px-2 py-1 transition-all hover:scale-110 hover:bg-[#ECB176] hover:text-white duration-500 hover:drop-shadow-2xl"
+                className="group flex items-center gap-1 border-white border-2 hover:border-[#ECB176] rounded-3xl px-2 py-1 transition-all hover:scale-110 hover:bg-[#ECB176] hover:text-white duration-500 hover:drop-shadow-2xl"
               >
                 <IoDocumentTextOutline className="group-hover:rotate-12 transition-all duration-500" />{' '}
                 <span className="text-[18px]">Resume</span>

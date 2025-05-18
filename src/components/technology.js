@@ -196,17 +196,23 @@ export default function TechnologyPage() {
   }, [activeFilter]);
 
   return (
-    <div className="containerBackground">
+    <div className="containerBackground relative">
+      <div className="relative flex items-center justify-center w-full text-[#FFB120] text-[2.5rem] font-extrabold top-5 z-10 mb-10">
+        <h1>TECHNOLOGY STACK</h1>
+      </div>
+      <div className="absolute flex items-center justify-center w-full text-[#443323] opacity-50 font-extrabold text-[5rem] top-1">
+        <h1>TECHNOLOGY STACK</h1>
+      </div>
+      <div className="w-full flex items-center justify-center absolute">
+        <div className="absolute w-35 h-1 bg-[#FFB120] -top-5"></div>
+        <div className="absolute w-65 h-0.25 bg-[#FFB120] -top-4.75"></div>
+      </div>
       <main
         id="technologyPage"
         className="w-full h-full min-h-screen flex justify-center py-8" // Use min-h-screen if content can be short
       >
-        <div className="flex flex-col items-center w-full h-full min-h-screen max-w-4/5 bg-white/25 rounded-4xl border-white border-2 my-auto">
-          <div className="flex justify-center">
-            <h1 className="text-white font-bold text-[36px] p-4">
-              Technology Stack
-            </h1>
-          </div>
+        <div className="flex flex-col items-center w-full h-full min-h-screen max-w-4/5 rounded-4xl   my-auto">
+          <div className="flex justify-center"></div>
           <div className="flex flex-wrap gap-4 md:gap-8 text-[15px] justify-center p-4">
             {' '}
             {/* Adjusted gap and padding for responsiveness */}
@@ -216,7 +222,7 @@ export default function TechnologyPage() {
                 onClick={() => setActiveFilter(category.value)}
                 className={`HoverButton !px-4 md:!px-8 ${
                   activeFilter === category.value
-                    ? 'bg-white text-purple-900 scale-105' // Example active style
+                    ? 'bg-[#ffb120] scale-105' // Example active style
                     : 'text-white'
                 }`}
               >
@@ -224,7 +230,7 @@ export default function TechnologyPage() {
               </button>
             ))}
           </div>
-          <div className="mt-8 mb-16 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 md:gap-8 justify-around w-full max-w-9/10 px-4 justify-items-center items-center">
+          <div className="mt-8 mb-16 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 md:gap-8 justify-around w-full max-w-9/10 p-4 justify-items-center items-center bg-[#FFD8B5]/40 rounded-4xl">
             {' '}
             {/* Responsive grid and added gap */}
             {filteredItems.length > 0 ? (
@@ -234,7 +240,7 @@ export default function TechnologyPage() {
                   href={item.link}
                   target="_blank"
                   rel="noopener noreferrer" // Good practice for security and SEO
-                  className="technologyLabels flex flex-col items-center text-center p-2 transition-transform hover:scale-110" // Ensure this class applies desired styles
+                  className="technologyLabels flex flex-col items-center text-center p-2 transition-transform hover:scale-105" // Ensure this class applies desired styles
                 >
                   <Image
                     src={item.logo}
