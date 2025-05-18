@@ -62,7 +62,7 @@ export default function HomePage() {
               <a
                 href="/resume/resume.pdf"
                 download="resume.pdf"
-                className="group flex items-center gap-1 border-white border-2 rounded-3xl py-2 px-4 transition-all hover:scale-110 hover:bg-white hover:text-[#FFB120] duration-500 hover:drop-shadow-2xl"
+                className="group flex items-center gap-1 border-white border-2 rounded-3xl py-1 px-4 transition-all hover:scale-110 hover:bg-white hover:text-[#FFB120] duration-500 hover:drop-shadow-2xl"
               >
                 <IoDocumentTextOutline className="group-hover:rotate-12 transition-all duration-500" />{' '}
                 <span className="text-[18px]">Resume</span>

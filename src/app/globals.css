@@ -44,7 +44,7 @@ body {
 
 /* --- NAVBUTTON STYLES --- */
 .navButton {
-  padding-inline: 1rem; /* Tailwind: px-4 */
+  padding-inline: 0.5rem; /* Tailwind: px-4 */
   padding-block: 0.5rem; /* Tailwind: py-2 */
   border-radius: 1rem; /* Tailwind: rounded-2xl (1rem is large, adjust if needed, 0.5rem is rounded-lg) */
   position: relative; /* Crucial for positioning the ::after pseudo-element */
