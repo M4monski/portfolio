@@ -1,8 +1,8 @@
 'use client';
 
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
-import { IoDocumentTextOutline } from 'react-icons/io5';
 import { MdOutlineMail } from 'react-icons/md';
+import { IoDocumentTextOutline } from 'react-icons/io5';
 import { FaCircleArrowDown } from 'react-icons/fa6';
 
 export default function HomePage() {
