@@ -171,11 +171,35 @@ const projectsData = [
         alt: 'QuickShop - Main Sales Interface',
       },
       {
-        src: '/projects/QuickShop_inventory.png',
-        alt: 'QuickShop - Inventory Management',
+        src: '/projects/QS-Home.png',
+        alt: 'QuickShop - Home',
       },
       {
-        src: '/projects/QuickShop_sales_report.png',
+        src: '/projects/QS-Customer.png',
+        alt: 'QuickShop - Customers',
+      },
+      {
+        src: '/projects/QS-ProdDeets.png',
+        alt: 'QuickShop - Product Details',
+      },
+      {
+        src: '/projects/QS-Cart.png',
+        alt: 'QuickShop - Cart',
+      },
+      {
+        src: '/projects/QS-Checkout.png',
+        alt: 'QuickShop - Checkout',
+      },
+      {
+        src: '/projects/QS-Admin.png',
+        alt: 'QuickShop - Admin',
+      },
+      {
+        src: '/projects/QS-ManageProduct.png',
+        alt: 'QuickShop - Manage PRoduct',
+      },
+      {
+        src: '/projects/QS-SalesReport.png',
         alt: 'QuickShop - Sales Report Generation',
       },
     ],
