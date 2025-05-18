@@ -73,7 +73,7 @@ export default function HomePage() {
           </div>
           <button
             onClick={() => handleScrollTo('bioPage')}
-            className="text-[30px] md:text-[40px] absolute bottom-15 hover:scale-130 duration-300 cursor-pointer transition-all animate-bounce hover:text-[#FFB120]"
+            className="text-[30px] md:text-[40px] absolute bottom-25 md:bottom-15 hover:scale-130 duration-300 cursor-pointer transition-all animate-bounce hover:text-[#FFB120]"
           >
             <FaCircleArrowDown />
           </button>
