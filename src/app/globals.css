@@ -66,45 +66,43 @@ body {
 
 /* --- NAVBUTTON STYLES --- */
 .navButton {
-  padding-inline: 0.25rem; /* Tailwind: px-4 */
+  padding-inline: 0.25rem; /* Tailwind: px-1 for md, adjust as needed for mobile menu if different */
   padding-block: 0.5rem; /* Tailwind: py-2 */
-  border-radius: 1rem; /* Tailwind: rounded-2xl (1rem is large, adjust if needed, 0.5rem is rounded-lg) */
-  position: relative; /* Crucial for positioning the ::after pseudo-element */
-  background-color: transparent; /* Ensure no default button background interferes */
-  border: none; /* Remove default button border */
-  color: inherit; /* Inherit text color from parent (or set a default like var(--foreground) or white) */
+  border-radius: 1rem;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  color: inherit;
   cursor: pointer;
-  outline: none; /* Optional: remove default browser focus outline if you have custom focus styles */
-  transition: color 0.4s ease-in-out; /* Animate text color change */
-  -webkit-tap-highlight-color: transparent; /* Optional: remove tap highlight on mobile */
+  outline: none;
+  transition: color 0.4s ease-in-out;
+  -webkit-tap-highlight-color: transparent;
+  /* Consider slightly larger tap targets for mobile if needed */
+  /* For mobile menu, you might want them to be wider or have more padding */
 }
 
 /* The animated underline */
 .navButton::after {
-  content: ''; /* Required for pseudo-elements */
+  content: '';
   position: absolute;
-  width: 100%; /* Underline spans the full width of the button */
-  height: 2px; /* Thickness of the underline */
+  width: 100%;
+  height: 2px;
   bottom: 0.125rem;
   left: 0;
-  background-color: #ffb120; /* Color of the underline (your accent color) */
-  transform: scaleX(
-    0
-  ); /* Initially, the underline is scaled to zero width (hidden) */
+  background-color: #ffb120;
+  transform: scaleX(0);
   transform-origin: center;
   transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-/* Styles for when the button is hovered or active */
 .navButton:hover,
 .navButton.navButtonActive {
   color: #ffb120;
 }
 
-/* Animate the underline to full width on hover or active state */
 .navButton:hover::after,
 .navButton.navButtonActive::after {
-  transform: scaleX(1); /* Scale underline to 100% width */
+  transform: scaleX(1);
 }
 
 .technologyLabels {

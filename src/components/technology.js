@@ -197,23 +197,23 @@ export default function TechnologyPage() {
 
   return (
     <div className="containerBackground relative">
-      <div className="relative flex items-center justify-center w-full text-[#FFB120] text-[2.5rem] font-extrabold top-5 z-10 mb-10">
+      <div className="relative flex items-center justify-center w-full text-[#FFB120] text-[1rem] sm:text-[1.5rem] lg:text-[2.5rem] font-extrabold top-5 z-10 mb-10">
         <h1>TECHNOLOGY STACK</h1>
       </div>
-      <div className="absolute flex items-center justify-center w-full text-[#443323] opacity-50 font-extrabold text-[5rem] top-1">
+      <div className="absolute flex items-center justify-center w-full text-[#443323] opacity-50 font-extrabold text-[1.5rem] sm:text-[2.5rem] lg:text-[5rem] top-4 sm:top-3 lg:top-1">
         <h1>TECHNOLOGY STACK</h1>
       </div>
       <div className="w-full flex items-center justify-center absolute">
-        <div className="absolute w-35 h-1 bg-[#FFB120] -top-5"></div>
-        <div className="absolute w-65 h-0.25 bg-[#FFB120] -top-4.75"></div>
+        <div className="absolute w-20 md:w-35 h-1 bg-[#FFB120] -top-5"></div>
+        <div className="absolute w-50 md:w-65 h-0.25 bg-[#FFB120] -top-4.75"></div>
       </div>
       <main
         id="technologyPage"
-        className="w-full h-full min-h-screen flex justify-center py-8" // Use min-h-screen if content can be short
+        className="w-full h-full min-h-screen flex justify-center py-0 sm:py-8" // Use min-h-screen if content can be short
       >
         <div className="flex flex-col items-center w-full h-full min-h-screen max-w-4/5 rounded-4xl   my-auto">
           <div className="flex justify-center"></div>
-          <div className="flex flex-wrap gap-4 md:gap-8 text-[15px] justify-center p-4">
+          <div className="grid grid-cols-1 sm:flex sm:flex-wrap gap-4 lg:gap-8 text-[10px] md:text-[12px] lg:text-[15px] justify-center p-4">
             {' '}
             {/* Adjusted gap and padding for responsiveness */}
             {filterCategories.map((category) => (
@@ -230,7 +230,7 @@ export default function TechnologyPage() {
               </button>
             ))}
           </div>
-          <div className="mt-8 mb-16 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 md:gap-8 justify-around w-full max-w-9/10 p-4 justify-items-center items-center bg-[#FFD8B5]/40 rounded-4xl">
+          <div className="mt-8 mb-16 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-0 md:gap-6 lg:gap-8 justify-around w-full max-w-9/10 p-4 justify-items-center items-center bg-[#FFD8B5]/40 rounded-4xl transition-all duration-300">
             {' '}
             {/* Responsive grid and added gap */}
             {filteredItems.length > 0 ? (
@@ -240,14 +240,14 @@ export default function TechnologyPage() {
                   href={item.link}
                   target="_blank"
                   rel="noopener noreferrer" // Good practice for security and SEO
-                  className="technologyLabels flex flex-col items-center text-center p-2 transition-transform hover:scale-105" // Ensure this class applies desired styles
+                  className="technologyLabels flex flex-col items-center text-center p-2 transition-transform scale-80 md:scale-100 hover:scale-105" // Ensure this class applies desired styles
                 >
                   <Image
                     src={item.logo}
                     width={75}
                     height={75}
                     alt={item.name}
-                    className="object-contain" // Ensures image scales nicely
+                    className="object-contain scale-80 md:scale-100" // Ensures image scales nicely
                   />
                   <span className="mt-2 text-[#FFD8B5] text-sm">
                     {item.name}

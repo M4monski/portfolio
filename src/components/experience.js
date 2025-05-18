@@ -367,13 +367,16 @@ export default function ExperiencePage() {
 
   return (
     <div className="containerBackground relative pb-16">
-      <div className="relative flex items-center justify-center w-full text-[#FFB120] text-[2.5rem] font-extrabold top-5 z-10 mb-10">
+      <div className="relative flex items-center justify-center w-full text-[#FFB120] text-[1.5rem] md:text-[2.5rem] font-extrabold top-5 z-10 mb-10">
         <h1>EXPERIENCE</h1>
       </div>
-      <div className="absolute flex items-center justify-center w-full text-[#443323] opacity-50 font-extrabold text-[5rem] top-1">
+      <div className="absolute flex items-center justify-center w-full text-[#443323] opacity-50 font-extrabold text-[2.5rem] md:text-[5rem] top-3.25 md:top-1">
         <h1>EXPERIENCE</h1>
       </div>
-
+      <div className="w-full flex items-center justify-center absolute">
+        <div className="absolute w-20 md:w-35 h-1 bg-[#FFB120] -top-5 md:-top-4"></div>
+        <div className="absolute w-50 md:w-65 h-0.25 bg-[#FFB120] -top-4.75 md:-top-3.75"></div>
+      </div>
       <main
         id="experiencePage"
         className="w-full md:max-w-6xl lg:max-w-7xl h-full p-8 md:p-16 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 items-stretch justify-center mx-auto"
@@ -384,14 +387,14 @@ export default function ExperiencePage() {
             onClick={() => openModal(project)}
             className="flex flex-col h-full items-start w-full p-4 bg-[#FFD8B5]/40 rounded-xl group cursor-pointer hover:shadow-lg hover:scale-[1.02] transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#ffb120]"
           >
-            <div className="flex items-start w-full">
+            <div className="lg:flex items-start w-full">
               <div className="flex-shrink-0 mr-4 flex justify-center items-center mt-1">
                 <Image
                   width={180}
                   height={180}
                   alt={project.altText}
                   src={project.imageSrc}
-                  className="rounded-md object-cover"
+                  className="rounded-md object-cover mb-8 md:mb-0"
                 />
               </div>
               <div className="flex-1 flex flex-col">

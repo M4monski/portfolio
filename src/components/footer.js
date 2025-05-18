@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <div className="bg-[#483423] w-full min-h-2/5 h-3/5 flex items-center justify-center p-8">
       <main>
-        <div className="flex items-center justify-center pb-6 gap-12 text-[50px]">
+        <div className="flex items-center justify-center pb-6 gap-6 sm:gap-12 text-[40px] lg:text-[50px]">
           <a
             className="hover:scale-120 transition-all duration-500 hover:rounded-full"
             target="_blank"
@@ -35,7 +35,7 @@ export default function Footer() {
             <FaFacebook />
           </a>
         </div>
-        <div className="flex flex-col items-center justify-center text-center">
+        <div className="flex flex-col items-center justify-center text-center text-[12px] md:text-[16px]">
           <h1>
             {' '}
             © 2025 Keith Harvey P. Angel. All Rights Reserved. |{' '}
