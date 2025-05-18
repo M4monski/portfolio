@@ -249,7 +249,9 @@ export default function TechnologyPage() {
                     alt={item.name}
                     className="object-contain" // Ensures image scales nicely
                   />
-                  <span className="mt-2 text-white text-sm">{item.name}</span>{' '}
+                  <span className="mt-2 text-[#FFD8B5] text-sm">
+                    {item.name}
+                  </span>{' '}
                   {/* Added text color and margin */}
                 </a>
               ))

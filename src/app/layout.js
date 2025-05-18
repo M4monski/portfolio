@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
           {' '}
           {/* <--- WRAPPER START */}
           <NavBar /> {/* NavBar can now consume the context */}
-          <main className="antialiased relative">{children}</main>{' '}
+          <main className="antialiased relative ">{children}</main>{' '}
           {/* page.js content will be here */}
           <Footer />
         </ActiveSectionProvider>{' '}

@@ -1,5 +1,23 @@
 @import 'tailwindcss';
 
+/* For Webkit-based browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 12px; /* Or use Tailwind's w-3 equivalent if you set up a theme value */
+}
+
+::-webkit-scrollbar-track {
+  background: #473525; /* Or theme('colors.gray.200') with a plugin */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c48a20; /* Or theme('colors.gray.500') */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffb120; /* Or theme('colors.gray.700') */
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -48,7 +66,7 @@ body {
 
 /* --- NAVBUTTON STYLES --- */
 .navButton {
-  padding-inline: 0.5rem; /* Tailwind: px-4 */
+  padding-inline: 0.25rem; /* Tailwind: px-4 */
   padding-block: 0.5rem; /* Tailwind: py-2 */
   border-radius: 1rem; /* Tailwind: rounded-2xl (1rem is large, adjust if needed, 0.5rem is rounded-lg) */
   position: relative; /* Crucial for positioning the ::after pseudo-element */
