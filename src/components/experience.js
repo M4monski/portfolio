@@ -21,26 +21,54 @@ const projectsData = [
     carouselImages: [
       {
         src: '/projects/SagipPilipinas.svg',
+        alt: 'Sagip Pilipinas - Logo',
+      },
+      {
+        src: '/projects/SGP-Home.png',
         alt: 'Sagip Pilipinas - Main View',
       },
       {
-        src: '/projects/SagipPilipinas_dashboard.png',
-        alt: 'Sagip Pilipinas - Dashboard',
+        src: '/projects/SGP-DistCenter.png',
+        alt: 'Sagip Pilipinas - Distribution Center View',
       },
       {
-        src: '/projects/SagipPilipinas_report.png',
-        alt: 'Sagip Pilipinas - Report Page',
+        src: '/projects/SGP-DonationNews.png',
+        alt: 'Sagip Pilipinas - Donation News View',
+      },
+      {
+        src: '/projects/SGP-LatestNews.png',
+        alt: 'Sagip Pilipinas - Latest News View',
+      },
+      {
+        src: '/projects/SGP-NewsDeets.png',
+        alt: 'Sagip Pilipinas - News Details View',
+      },
+      {
+        src: '/projects/SGP-Map.png',
+        alt: 'Sagip Pilipinas - Map',
+      },
+      {
+        src: '/projects/SGP-Donation1.png',
+        alt: 'Sagip Pilipinas - Donation 1',
+      },
+      {
+        src: '/projects/SGP-Donation2.png',
+        alt: 'Sagip Pilipinas - Donation 2',
+      },
+      {
+        src: '/projects/SGP-RequestAid.png',
+        alt: 'Sagip Pilipinas - Requst Aid Page',
       },
     ],
     socialLinks: [
       {
         name: 'GitHub',
-        url: 'https://github.com/your-username/sagip-pilipinas-repo',
+        url: 'https://github.com/M4monski/Sagip-Pilipinas',
         icon: <FaGithub />,
       },
       {
         name: 'Live Demo',
-        url: 'https://sagip-pilipinas-demo.example.com',
+        url: 'https://sagip-pilipinas.vercel.app/',
         icon: <FaExternalLinkAlt />,
       },
     ],
@@ -60,23 +88,23 @@ const projectsData = [
     carouselImages: [
       { src: '/projects/SwiftSail.svg', alt: 'Swift Sail - Landing Page' },
       {
-        src: '/projects/SwiftSail_booking.png',
-        alt: 'Swift Sail - Booking Interface',
+        src: '/projects/SS-Home.png',
+        alt: 'Swift Sail - Landing Page',
       },
       {
-        src: '/projects/SwiftSail_tracking.png',
-        alt: 'Swift Sail - Live Tracking View',
+        src: '/projects/SS-Book.png',
+        alt: 'Swift Sail - Booking',
       },
     ],
     socialLinks: [
       {
         name: 'GitHub',
-        url: 'https://github.com/your-username/swift-sail-repo',
+        url: 'https://github.com/M4monski/ferrybookingsystem-scamacs',
         icon: <FaGithub />,
       },
       {
         name: 'Live Demo',
-        url: 'https://swift-sail-demo.example.com',
+        url: 'https://swiftsail-ferries.vercel.app/',
         icon: <FaExternalLinkAlt />,
       },
     ],
@@ -96,23 +124,31 @@ const projectsData = [
     carouselImages: [
       { src: '/projects/GourmetGamble.svg', alt: 'Gourmet Gamble - Home Page' },
       {
-        src: '/projects/GourmetGamble_recipe.png',
-        alt: 'Gourmet Gamble - Recipe View',
+        src: '/projects/GG-Home.png',
+        alt: 'Gourmet Gamble - Home View',
       },
       {
-        src: '/projects/GourmetGamble_community.png',
+        src: '/projects/GG-Recipe.png',
+        alt: 'Gourmet Gamble - Recipe Page',
+      },
+      {
+        src: '/projects/GG-RecipeDeets.png',
+        alt: 'Gourmet Gamble - Recipe Details Page',
+      },
+      {
+        src: '/projects/GG-Community.png',
         alt: 'Gourmet Gamble - Community Forum',
       },
     ],
     socialLinks: [
       {
         name: 'GitHub',
-        url: 'https://github.com/your-username/gourmet-gamble-repo',
+        url: 'https://github.com/M4monski/GourmentGamble',
         icon: <FaGithub />,
       },
       {
         name: 'Live Demo',
-        url: 'https://swift-sail-demo.example.com',
+        url: 'https://gourmetgamble0.vercel.app/?fbclid=IwZXh0bgNhZW0CMTEAAR25oNtxXFAdEMOVl61cuEBbGeUqOhRvjM5VS2599WpTU4V5joKDy1oOa7Y_aem_aA-Puq8s26jvxWeZmAID5g',
         icon: <FaExternalLinkAlt />,
       },
     ],
@@ -146,13 +182,8 @@ const projectsData = [
     socialLinks: [
       {
         name: 'GitHub',
-        url: 'https://github.com/your-username/quickshop-pos-repo',
+        url: 'https://github.com/M4monski/QUICKSHOP-Finals-Requirement-CpE262',
         icon: <FaGithub />,
-      },
-      {
-        name: 'Live Demo',
-        url: 'https://swift-sail-demo.example.com',
-        icon: <FaExternalLinkAlt />,
       },
     ],
     myContributions:
@@ -489,7 +520,7 @@ export default function ExperiencePage() {
                             {selectedProject.carouselImages.map(
                               (img, index) => (
                                 <div
-                                  className="embla__slide flex-[0_0_100%] min-w-0 relative aspect-video flex items-center justify-center bg-white/80 rounded-md"
+                                  className="embla__slide flex-[0_0_100%] min-w-0 relative aspect-video flex items-center justify-center bg-white rounded-md"
                                   key={index}
                                 >
                                   <Image
