@@ -1,7 +1,7 @@
 'use client';
 
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
-import { MdOutlineMail } from 'react-icons/md';
+import { IoIosMail } from 'react-icons/io';
 import { IoDocumentTextOutline } from 'react-icons/io5';
 import { FaCircleArrowDown } from 'react-icons/fa6';
 
@@ -57,7 +57,7 @@ export default function HomePage() {
                 target="_blank"
                 href="mailto:angel.keithharvey@gmail.com"
               >
-                <MdOutlineMail />
+                <IoIosMail />
               </a>
               <a
                 href="/resume/resume.pdf"

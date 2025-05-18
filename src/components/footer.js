@@ -1,5 +1,5 @@
 import { FaLinkedin, FaGithub, FaFacebook } from 'react-icons/fa';
-import { MdOutlineMail } from 'react-icons/md';
+import { IoIosMail } from 'react-icons/io';
 
 export default function Footer() {
   return (
@@ -25,7 +25,7 @@ export default function Footer() {
             target="_blank"
             href="mailto:angel.keithharvey@gmail.com"
           >
-            <MdOutlineMail />
+            <IoIosMail />
           </a>
           <a
             className="hover:scale-120 transition-transform duration-500"
