@@ -33,8 +33,8 @@ export default function HomePage() {
             <div>
               <h2 className="flex font-light text-[0.75rem] md:text-[1.5rem] lg:text-[2rem] max-w-7/10 items-center justify-center text-center mx-auto">
                 Frontend Developer aspiring to full-stack. I craft clean,
-                impactful code with React, Next.js, JS/TS & C#/.NET. Love new
-                challenges & ready to collaborate!
+                impactful code with React, Next.js, JavaSript/TypeScript &
+                C#/.NET. Love new challenges & ready to collaborate!
               </h2>
             </div>
             <div className="sm:flex grid grid-cols-2 items-center justify-center justify-items-center gap-y-4 md:gap-y-8 sm:gap-6 md:gap-12 text-[35px] sm:text-[40px] md:text-[50px]">
