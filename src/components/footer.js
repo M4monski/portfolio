@@ -47,7 +47,7 @@ export default function Footer() {
               Download Resume
             </a>
           </h1>
-          <h1> Built with Next.js and Tailwind, deployed in domainname</h1>
+          <h1> Built with Next.js and Tailwind, deployed in vercel</h1>
         </div>
       </main>
     </div>
